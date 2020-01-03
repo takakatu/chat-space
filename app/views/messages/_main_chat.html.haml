@@ -1,0 +1,39 @@
+.main-body
+  .main-header
+    .left-box
+      %p.group-name
+        グループ名
+      %p.member-names
+        member: name
+    =link_to "#", class: "edit__btn" do
+      Edit
+  .chat-main
+    .contributor-box
+      %p.contributor-name
+        名前
+      %p.contributor-time
+        時刻
+    .main-message-box
+      メッセージ
+    .contributor-box
+      %p.contributor-name
+        名前
+      %p.contributor-time
+        時刻
+    .main-message-box
+      メッセージ
+    .contributor-box
+      %p.contributor-name
+        名前
+      %p.contributor-time
+        時刻
+    .main-message-box
+      メッセージ
+  .footer
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
